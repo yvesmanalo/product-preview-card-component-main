@@ -1,0 +1,221 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.image {
+    background: url(images/image-product-desktop.jpg);
+    width: 15em;
+    height: 22.5em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.6em 0em 0em 0.6em;
+}
+
+.item-description {
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0em 0.6em 0.6em 0em;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em 2.5em 0em 1.6em;
+}
+
+s {
+    font-size: 0.7rem;
+    color: hsl(228, 12%, 48%)
+}
+
+
+#perfume-name {
+    font-family: 'Fraunces', serif;
+    margin: 1em 1.2em 0.5em 1.2em;
+    line-height: 1.5rem;
+}
+
+#perfume-discount-price {
+    font-family: 'Fraunces', serif;
+    margin: 0.5em 0.5em 0.5em 0em;
+    font-size: 1.8rem;
+    color: hsl(158, 36%, 37%);
+}
+
+#perfume-product-description {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0em 2.5em 0em 2.5em;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    color: hsl(228, 12%, 48%)
+}
+
+#perfume-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    margin: 2.9em 1.2em 0em 3.1em;
+    color: hsl(228, 12%, 48%);
+    font-weight: normal;
+}
+
+.add-to-cart-button {
+    text-align: center;
+    padding: 0;
+    margin: 0.5em 1.65em 0em 1.65em;
+}
+
+button {
+    margin: 0;
+    padding: 1em 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    border-radius: 0.6em;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.add-to-cart-icon {
+    width: 1.1em;
+    margin: 0;
+}
+
+h5 {
+    margin: 0em 1em;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 21%);
+}
+
+
+
+@media(max-width:375px) {
+    .container {
+        margin: auto;
+        width: 60em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        background: url(images/image-product-mobile.jpg);
+        width: 17em;
+        height: 12em;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.6em 0.6em 0em 0em;
+    }
+
+    .item-description {
+        width: 17em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 0em 0em 0.6em 0.6em;
+    }
+
+    .item-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.1em 2.5em 0em 1.6em;
+    }
+
+    s {
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        align-self: center;
+    }
+
+
+    #perfume-name {
+        font-family: 'Fraunces', serif;
+        margin: 0.5em 1.2em 0.5em 0.85em;
+        line-height: 1.5rem;
+    }
+
+    #perfume-discount-price {
+        font-family: 'Fraunces', serif;
+        margin: 0.5em 0.5em 0.5em 0em;
+        font-size: 1.8rem;
+        color: hsl(158, 36%, 37%);
+    }
+
+    #perfume-product-description {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0em 1.2em 0em 2em;
+        font-size: 0.7rem;
+        line-height: 1.1rem;
+        color: hsl(228, 12%, 48%)
+    }
+
+    #perfume-label {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.6rem;
+        margin: 2em 1.2em 0em 2.5em;
+        color: hsl(228, 12%, 48%);
+        font-weight: normal;
+    }
+
+    .add-to-cart-button {
+        text-align: center;
+        padding: 0;
+        margin: auto auto;
+    }
+
+    button {
+        margin-bottom: 1em;
+        padding: 1em 4em;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.7rem;
+        color: white;
+        border-radius: 0.6em;
+        background-color: hsl(158, 36%, 37%);
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 21em;
+    }
+
+    /* .add-to-cart-icon {
+        width: 1.1em;
+        margin: 0;
+    }
+
+    h5 {
+        margin: 0em 1em;
+    }
+
+    button:hover {
+        background-color: hsl(158, 36%, 21%);
+    } */
+}
